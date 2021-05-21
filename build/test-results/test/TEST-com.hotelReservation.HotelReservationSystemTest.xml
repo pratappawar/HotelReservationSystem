@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hotelReservation.HotelReservationSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-21T06:13:46" hostname="LAPTOP-JK99497U" time="0.056">
+<testsuite name="com.hotelReservation.HotelReservationSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-21T09:25:18" hostname="LAPTOP-JK99497U" time="0.066">
   <properties/>
-  <testcase name="findCheapestHotelInListShouldPassTestCase()" classname="com.hotelReservation.HotelReservationSystemTest" time="0.056"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="when_Added_Given_Hotel_To_HotelReservationSystem_Should_PassTestCase()" classname="com.hotelReservation.HotelReservationSystemTest" time="0.066"/>
+  <system-out><![CDATA[[com.hotelReservation.Hotel@1d687b85]
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
