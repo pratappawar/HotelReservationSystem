@@ -5,7 +5,19 @@ public class Hotel {
      * properties of Hotel class
      */
     private String hotelName;
-    private double dailyRate;
+    private double dailyRate,weekDayRate,weekEndRate;
+    
+    /**
+     * Added Parameterized constructor with three different parameter
+     * @param hotelName
+     * @param weekDayRate
+     * @param weekEndRate
+     */
+    public Hotel(String hotelName, double weekDayRate, double weekEndRate) {
+        this.hotelName = hotelName;
+        this.weekDayRate = weekDayRate;
+        this.weekEndRate = weekEndRate;
+    }
 
     /**
      * Parameterized constructor

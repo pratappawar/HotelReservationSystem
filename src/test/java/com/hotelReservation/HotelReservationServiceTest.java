@@ -34,4 +34,20 @@ public class HotelReservationServiceTest {
         Hotel result = hotels.findCheapestHotel(days);
         Assertions.assertEquals(hotel1, result);
     }
+
+    /**
+     * I have added here is Weekday rate and WeekEnd rate
+     */
+    @Test
+  public void given_HotelWith3Parameter_To_Add_Weekday_and_weekend_to_list_ShouldPassTestCase() {
+        HotelReservationService hotelReservationService = new HotelReservationService();
+        Hotel hotels1=new Hotel("Lakewood",110,90);
+        Hotel hotels2=new Hotel("BridgeWood",150,50);
+        Hotel hotels3=new Hotel("RidgeWood",2200,150);
+        hotelReservationService.addHotel(hotels1);
+        hotelReservationService.addHotel(hotels2);
+        hotelReservationService.addHotel(hotels3);
+        List hotelList=hotelReservationService.getHotels();
+        Assertions.assertTrue(hotelList.contains(hotels1));
+    }
 }
