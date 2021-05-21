@@ -36,7 +36,16 @@ public class Hotel {
      * set daily rate
      * @param
      */
-    public void setDailyRate(double dailyRate) {
-        this.dailyRate = dailyRate;
+    public void setDailyRate(int noOfDays) {
+        this.dailyRate = this.dailyRate*noOfDays;
+    }
+
+    /**
+     * it is an overridden methode to display Hotel name and daily rate
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Hotel{" + "hotelName='" + hotelName + '\'' + ", dailyRate=" + dailyRate + '}';
     }
 }
